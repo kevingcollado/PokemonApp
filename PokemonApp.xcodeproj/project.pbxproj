@@ -15,6 +15,16 @@
 		D51C68FC2B2695EE0020179F /* PokemonAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C68FB2B2695EE0020179F /* PokemonAppUITestsLaunchTests.swift */; };
 		D51C690B2B269C910020179F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C69092B269C910020179F /* MainViewController.swift */; };
 		D51C690C2B269C910020179F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51C690A2B269C910020179F /* MainViewController.xib */; };
+		D5AB93D12B26A7CA009D2F82 /* MainViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AB93D02B26A7CA009D2F82 /* MainViewController+CollectionView.swift */; };
+		D5AB93D32B26B097009D2F82 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AB93D22B26B097009D2F82 /* MainViewModel.swift */; };
+		D5AB93D52B26B9DC009D2F82 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AB93D42B26B9DC009D2F82 /* NetworkConstant.swift */; };
+		D5AB93D72B26B9F5009D2F82 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AB93D62B26B9F5009D2F82 /* NetworkManager.swift */; };
+		D5AB93DA2B26BA1B009D2F82 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D5AB93D92B26BA1B009D2F82 /* Alamofire */; };
+		D5AB93DD2B26BA25009D2F82 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D5AB93DC2B26BA25009D2F82 /* Kingfisher */; };
+		D5AB93DF2B26BA96009D2F82 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AB93DE2B26BA96009D2F82 /* Pokemon.swift */; };
+		D5AB93E22B26CA28009D2F82 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AB93E12B26CA28009D2F82 /* Observable.swift */; };
+		D5AB93E52B26D32D009D2F82 /* PokemonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AB93E32B26D32D009D2F82 /* PokemonCollectionViewCell.swift */; };
+		D5AB93E62B26D32D009D2F82 /* PokemonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5AB93E42B26D32D009D2F82 /* PokemonCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +57,14 @@
 		D51C68FB2B2695EE0020179F /* PokemonAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D51C69092B269C910020179F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D51C690A2B269C910020179F /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		D5AB93D02B26A7CA009D2F82 /* MainViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		D5AB93D22B26B097009D2F82 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		D5AB93D42B26B9DC009D2F82 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
+		D5AB93D62B26B9F5009D2F82 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D5AB93DE2B26BA96009D2F82 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		D5AB93E12B26CA28009D2F82 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		D5AB93E32B26D32D009D2F82 /* PokemonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCollectionViewCell.swift; sourceTree = "<group>"; };
+		D5AB93E42B26D32D009D2F82 /* PokemonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5AB93DD2B26BA25009D2F82 /* Kingfisher in Frameworks */,
+				D5AB93DA2B26BA1B009D2F82 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +117,7 @@
 		D51C68D72B2695E70020179F /* PokemonApp */ = {
 			isa = PBXGroup;
 			children = (
+				D5AB93E02B26CA17009D2F82 /* Clases */,
 				D51C69132B26A1EC0020179F /* Resources */,
 				D51C69122B26A1A10020179F /* Networking */,
 				D51C69112B26A1920020179F /* Extensions */,
@@ -132,6 +153,7 @@
 			children = (
 				D51C69092B269C910020179F /* MainViewController.swift */,
 				D51C690A2B269C910020179F /* MainViewController.xib */,
+				D5AB93D02B26A7CA009D2F82 /* MainViewController+CollectionView.swift */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -139,6 +161,7 @@
 		D51C690D2B26A12D0020179F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D5AB93DE2B26BA96009D2F82 /* Pokemon.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,6 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				D51C68E32B2695ED0020179F /* LaunchScreen.storyboard */,
+				D5AB93E32B26D32D009D2F82 /* PokemonCollectionViewCell.swift */,
+				D5AB93E42B26D32D009D2F82 /* PokemonCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +187,7 @@
 		D51C69102B26A1510020179F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				D5AB93D22B26B097009D2F82 /* MainViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -176,6 +202,8 @@
 		D51C69122B26A1A10020179F /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				D5AB93D42B26B9DC009D2F82 /* NetworkConstant.swift */,
+				D5AB93D62B26B9F5009D2F82 /* NetworkManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -186,6 +214,14 @@
 				D51C68E12B2695ED0020179F /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D5AB93E02B26CA17009D2F82 /* Clases */ = {
+			isa = PBXGroup;
+			children = (
+				D5AB93E12B26CA28009D2F82 /* Observable.swift */,
+			);
+			path = Clases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +240,10 @@
 			dependencies = (
 			);
 			name = PokemonApp;
+			packageProductDependencies = (
+				D5AB93D92B26BA1B009D2F82 /* Alamofire */,
+				D5AB93DC2B26BA25009D2F82 /* Kingfisher */,
+			);
 			productName = PokemonApp;
 			productReference = D51C68D52B2695E70020179F /* PokemonApp.app */;
 			productType = "com.apple.product-type.application";
@@ -276,6 +316,10 @@
 				Base,
 			);
 			mainGroup = D51C68CC2B2695E70020179F;
+			packageReferences = (
+				D5AB93D82B26BA1B009D2F82 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				D5AB93DB2B26BA25009D2F82 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = D51C68D62B2695E70020179F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -294,6 +338,7 @@
 			files = (
 				D51C68E52B2695ED0020179F /* LaunchScreen.storyboard in Resources */,
 				D51C690C2B269C910020179F /* MainViewController.xib in Resources */,
+				D5AB93E62B26D32D009D2F82 /* PokemonCollectionViewCell.xib in Resources */,
 				D51C68E22B2695ED0020179F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,8 +364,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5AB93E22B26CA28009D2F82 /* Observable.swift in Sources */,
+				D5AB93E52B26D32D009D2F82 /* PokemonCollectionViewCell.swift in Sources */,
+				D5AB93DF2B26BA96009D2F82 /* Pokemon.swift in Sources */,
+				D5AB93D72B26B9F5009D2F82 /* NetworkManager.swift in Sources */,
+				D5AB93D12B26A7CA009D2F82 /* MainViewController+CollectionView.swift in Sources */,
 				D51C68D92B2695E70020179F /* AppDelegate.swift in Sources */,
 				D51C690B2B269C910020179F /* MainViewController.swift in Sources */,
+				D5AB93D52B26B9DC009D2F82 /* NetworkConstant.swift in Sources */,
+				D5AB93D32B26B097009D2F82 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,6 +713,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D5AB93D82B26BA1B009D2F82 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+		D5AB93DB2B26BA25009D2F82 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D5AB93D92B26BA1B009D2F82 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5AB93D82B26BA1B009D2F82 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		D5AB93DC2B26BA25009D2F82 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5AB93DB2B26BA25009D2F82 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D51C68CD2B2695E70020179F /* Project object */;
 }
