@@ -60,10 +60,23 @@ class MainViewController: UIViewController {
             }
         }
         
-        ///
+        //
         mainViewModel.cellDataSource.bind { [weak self] pokemonData in
             self?.cellDataSource = pokemonData
             self?.reloadUICollection()
+        }
+    }
+    
+    //Pasar datos a otro View Controller
+    func openDetails(pokemonID: Int){
+        guard let pokemon = mainViewModel.retrivePokemon(with: pokemonID) else{
+            return
+        }
+        ///Inyectar View Model dentro de View Controller
+        let detailViewModel = DetailViewModel(pokemonClass: pokemon)
+        let detailsController = DetailViewController(detailViewModel: detailViewModel)
+        DispatchQueue.main.async {
+            self.navigationController?.pushViewController(detailsController, animated: true)
         }
     }
 }

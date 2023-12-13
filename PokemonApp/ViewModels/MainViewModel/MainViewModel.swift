@@ -67,6 +67,14 @@ class MainViewModel{
         return urlImage
     }
     
+    //
+    func retrivePokemon(with id: Int)-> PokemonClass?{
+        guard let pokemon = dataSource?.first(where: {$0?.id == id}) else{
+            return nil
+        }
+        return pokemon
+    }
+    
     //Obtener color
      func assignColor(_ pokemon: PokemonClass?) -> [CGColor] {
          switch pokemon?.type {

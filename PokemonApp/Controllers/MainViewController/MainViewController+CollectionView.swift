@@ -57,8 +57,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     //Funcionalidad
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let pokemonData = cellDataSource?[indexPath.row]
-        print("El pokemon seleccionado es: \(mainViewModel.getPokemonName(pokemonData))")
-        print("El color es: \(mainViewModel.assignColor(pokemonData))")
+        let pokemonData = cellDataSource?[indexPath.row]?.id
+            self.openDetails(pokemonID: pokemonData ?? 0)
     }
 }

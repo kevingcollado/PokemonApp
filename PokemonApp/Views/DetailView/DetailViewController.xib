@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="PokemonApp" customModuleProvider="target">
+            <connections>
+                <outlet property="attackLabel" destination="x3N-AY-uFF" id="Uhb-eY-1Zl"/>
+                <outlet property="backgroundImageView" destination="cME-6G-BnC" id="aTa-Ub-l9o"/>
+                <outlet property="defenseLabel" destination="6go-Zh-KEP" id="a5a-xO-ArZ"/>
+                <outlet property="descriptionLabel" destination="hHz-BT-mCV" id="KJh-Vq-1ME"/>
+                <outlet property="imageView" destination="AdM-gW-AWS" id="goA-dt-4gU"/>
+                <outlet property="nameLabel" destination="E0c-rX-lwV" id="Ia5-Wx-97E"/>
+                <outlet property="typeLabel" destination="Sdg-IN-zhA" id="Vfo-CM-Nbg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zGB-ab-Xo4">
+                    <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cME-6G-BnC">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="400"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kingfisher-10.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AdM-gW-AWS">
+                                    <rect key="frame" x="55" y="60" width="280" height="280"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="280" id="baR-oK-Ahm"/>
+                                        <constraint firstAttribute="height" constant="280" id="gd1-cq-Cxt"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="390" id="Bbq-TX-iV9"/>
+                                <constraint firstItem="AdM-gW-AWS" firstAttribute="centerY" secondItem="cME-6G-BnC" secondAttribute="centerY" id="MUz-gP-fQR"/>
+                                <constraint firstItem="AdM-gW-AWS" firstAttribute="centerX" secondItem="cME-6G-BnC" secondAttribute="centerX" id="h41-jg-vcn"/>
+                                <constraint firstAttribute="height" constant="400" id="k5c-6q-u09"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0c-rX-lwV">
+                            <rect key="frame" x="0.0" y="400" width="390" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="4st-ZY-CKD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="33"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HtG-oW-lab">
+                            <rect key="frame" x="0.0" y="480" width="390" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sdg-IN-zhA">
+                                    <rect key="frame" x="0.0" y="20" width="130" height="20.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3N-AY-uFF">
+                                    <rect key="frame" x="130" y="20" width="130" height="20.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6go-Zh-KEP">
+                                    <rect key="frame" x="260" y="20" width="130" height="20.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="n4t-QV-IEP"/>
+                            </constraints>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHz-BT-mCV">
+                            <rect key="frame" x="0.0" y="540" width="390" height="223"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="223" id="5yZ-fY-vdv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zGB-ab-Xo4" secondAttribute="bottom" id="17h-p8-dxD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zGB-ab-Xo4" secondAttribute="trailing" id="4fX-4V-zdi"/>
+                <constraint firstItem="zGB-ab-Xo4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ZIZ-5N-G2f"/>
+                <constraint firstItem="zGB-ab-Xo4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mXE-x5-8pV"/>
+            </constraints>
+            <point key="canvasLocation" x="-166" y="-37"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="kingfisher-10.jpg" width="250" height="250"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
