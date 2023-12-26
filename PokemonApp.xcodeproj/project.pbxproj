@@ -29,6 +29,7 @@
 		D5AB93F22B281582009D2F82 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AB93F02B281582009D2F82 /* DetailViewController.swift */; };
 		D5AB93F32B281582009D2F82 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5AB93F12B281582009D2F82 /* DetailViewController.xib */; };
 		D5AB93F72B282021009D2F82 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AB93F62B282021009D2F82 /* DetailViewModel.swift */; };
+		D5AB93FA2B2D165A009D2F82 /* MainViewController+SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AB93F92B2D165A009D2F82 /* MainViewController+SearchController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		D5AB93F02B281582009D2F82 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D5AB93F12B281582009D2F82 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		D5AB93F62B282021009D2F82 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		D5AB93F92B2D165A009D2F82 /* MainViewController+SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+SearchController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				D51C69092B269C910020179F /* MainViewController.swift */,
-				D5AB93D02B26A7CA009D2F82 /* MainViewController+CollectionView.swift */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -207,6 +208,7 @@
 		D51C69112B26A1920020179F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D5AB93F82B2D1635009D2F82 /* MainViewController */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -306,6 +308,15 @@
 				D5AB93F62B282021009D2F82 /* DetailViewModel.swift */,
 			);
 			path = DetailViewModel;
+			sourceTree = "<group>";
+		};
+		D5AB93F82B2D1635009D2F82 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D5AB93D02B26A7CA009D2F82 /* MainViewController+CollectionView.swift */,
+				D5AB93F92B2D165A009D2F82 /* MainViewController+SearchController.swift */,
+			);
+			path = MainViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,6 +468,7 @@
 				D5AB93D12B26A7CA009D2F82 /* MainViewController+CollectionView.swift in Sources */,
 				D51C68D92B2695E70020179F /* AppDelegate.swift in Sources */,
 				D5AB93F72B282021009D2F82 /* DetailViewModel.swift in Sources */,
+				D5AB93FA2B2D165A009D2F82 /* MainViewController+SearchController.swift in Sources */,
 				D51C690B2B269C910020179F /* MainViewController.swift in Sources */,
 				D5AB93D52B26B9DC009D2F82 /* NetworkConstant.swift in Sources */,
 				D5AB93D32B26B097009D2F82 /* MainViewModel.swift in Sources */,

@@ -11,13 +11,12 @@ class MainViewController: UIViewController {
     //Outlets
     @IBOutlet weak var mainCollectionView: UICollectionView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
-    
     //Referencia a ViewModel
     var mainViewModel : MainViewModel = MainViewModel()
-    
     //Variables
     var cellDataSource: Pokemon?
+    //Search controller
+    var searchController = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,9 +31,23 @@ class MainViewController: UIViewController {
     
     //Configuración de vista
     func setupView(){
+        setupTableView()
+        setupSearchController()
+    }
+    
+    //Configurar barra de busqueda
+    func setupSearchController(){
+        self.searchController.searchResultsUpdater = self
+        self.searchController.obscuresBackgroundDuringPresentation = false
+        self.searchController.hidesNavigationBarDuringPresentation = false
+        self.searchController.searchBar.placeholder = "Búsqueda"
+        
+        self.navigationItem.searchController = searchController
+        self.definesPresentationContext = false
+        self.navigationItem.hidesSearchBarWhenScrolling = false
+        
         self.navigationItem.title = "Pókedex"
         navigationController?.navigationBar.prefersLargeTitles = true
-        setupTableView()
     }
     
     //Encadenar conexión con ViewModel
